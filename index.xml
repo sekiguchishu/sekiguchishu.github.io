@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ホーム on 関口 周のサイト</title>
+    <link>http://sekiguchishu.github.io/</link>
+    <description>Recent content in ホーム on 関口 周のサイト</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    
+	<atom:link href="http://sekiguchishu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JDKのインストール</title>
+      <link>http://sekiguchishu.github.io/docs/java/java_env/jdk_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sekiguchishu.github.io/docs/java/java_env/jdk_install/</guid>
+      <description> JDKのインストール JDKとは 　JDKはJava Development Kitの略です。JDKには，Javaで書かれたソースコードをコンパイルするためのコンパイラや，そのコンパイル結果（バイトコードとよぶ）を実行するためのバーチャルマシンなどが含まれています。
+バーチャルマシンとは簡単にいうと，コンピュータの中に（CPUの上に）仮想的に作られたコンピュータのことです。C言語などのような言語で書かれたソースコードをコンパイルして出来上がったファイルに含まれる機械語は，特定のCPU上でしか解釈・実行できません。ところがJava言語で書かれたソースコードをコンパイルして出来上がったファイルに含まれるバイトコードは， バーチャルマシンが解釈・実行できます。つまり，CPUが違っても，その上に作られたバーチャルマシンさえ共通化しておけば，どんなプラットフォーム上でも動く（クロスプラットフォームな）実行ファイルを作れるというわけです。
+JDKには複数の種類がありますが，ここではOracle社が提供している，いわば公式のJDKをインストールします。
+ダウンロード 　まずはインストーラをダウンロードします。「jdk 13」で検索してください。執筆時点では最新バージョンは13ですが，適宜読み替えてください。「Java SE Development Kit 13 - Downloads - Oracle」というような名前のページを開きます。  このような表示があると思いますので，「Accept License Agreement」のラジオボタンをクリックしたうえで，Windowsの方は「.exe」のものを，Macの方は「.dmg」のものをダウンロードしてください。
+インストール 　ダウンロードしたファイルを起動し，「次」などを押してインストールを完了させてください。インストール先はデフォルトのままがよいでしょう。以下に想定される表示を載せておきます。      </description>
+    </item>
+    
+    <item>
+      <title>IDEのインストール</title>
+      <link>http://sekiguchishu.github.io/docs/java/java_env/ide_install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sekiguchishu.github.io/docs/java/java_env/ide_install/</guid>
+      <description> IDEのインストール </description>
+    </item>
+    
+  </channel>
+</rss>

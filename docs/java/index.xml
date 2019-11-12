@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 関口 周のサイト</title>
+    <link>http://sekiguchishu.github.io/docs/java/</link>
+    <description>Recent content in Java on 関口 周のサイト</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    
+	<atom:link href="http://sekiguchishu.github.io/docs/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

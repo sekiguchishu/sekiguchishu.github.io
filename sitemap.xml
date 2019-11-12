@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/java/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/nim/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/java/java_env/jdk_install/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/dtm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/java/java_env/ide_install/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/java/java_env/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/nim/nim_env/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/</loc>
+  </url>
+  
+</urlset>
