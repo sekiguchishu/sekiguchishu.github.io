@@ -3,19 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://sekiguchishu.github.io/docs/java/</loc>
-  </url>
-  
-  <url>
-    <loc>http://sekiguchishu.github.io/docs/nim/</loc>
-  </url>
-  
-  <url>
     <loc>http://sekiguchishu.github.io/docs/java/java_env/jdk_install/</loc>
-  </url>
-  
-  <url>
-    <loc>http://sekiguchishu.github.io/docs/dtm/</loc>
   </url>
   
   <url>
@@ -23,11 +11,27 @@
   </url>
   
   <url>
+    <loc>http://sekiguchishu.github.io/docs/java/</loc>
+  </url>
+  
+  <url>
     <loc>http://sekiguchishu.github.io/docs/java/java_env/</loc>
   </url>
   
   <url>
+    <loc>http://sekiguchishu.github.io/docs/nim/</loc>
+  </url>
+  
+  <url>
     <loc>http://sekiguchishu.github.io/docs/nim/nim_env/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/prog_inst/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/dtm/</loc>
   </url>
   
   <url>

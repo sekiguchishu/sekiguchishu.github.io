@@ -4,7 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="IDEのインストール" />
-<meta property="og:description" content=" IDEのインストール " />
+<meta property="og:description" content="IDEのインストール IDEの選択 　IDEはIntegrated Development Environment（統合開発環境）の略で，プログラミングを支援するための便利なソフトウェアです。IDEはプログラミングをするにあたって無くてはならないものです。IDEは様々な種類のものが存在し，その選択はほとんど好みの世界です。Java言語に対応しているIDEでよく使われるものとして，
+ NetBeans Eclipse IntelliJ IDEA  を挙げておきます。ここではNetBeansをインストールします。
+私はIDEで最も重要なことは入力補完機能の使いやすさだと思っています。補完の良し悪しでコーディングの効率が大きく変わってきます。上に挙げた3つのIDEの中で，NetBeansの補完が一番使いやすいと，個人的には思っています。
+ダウンロード 　まず「apache netbeans」で検索してみてください。執筆時点では以下のようなページがあらわれます。右上のDownloadをクリックします。  最新版の，緑色のDownloadボタンを押します（Latest LTS versionではなくLatest version）。  ここで選択肢が2つあります。インストールなし（ポータブル）で使いたい場合は「Binaries」のほうをクリックしてください。インストールしたい場合は，「Installers」のほうの，自身のOSのものをクリックしてください。  「We suggest the following mirror site for your download:」と書かれたリンクからダウンロードできます。  インストール 　「Binaries」のほうをダウンロードした場合はzipを解凍し，できたフォルダを好きな場所に置きます。
+「Installers」のほうをダウンロードした場合は，インストーラを起動し，「Next」などをクリックしてインストールを完了させます。インストーラの途中の設定はデフォルトのままでよいでしょう。先にインストールしたJDKを，インストーラが認識しているかだけ確認してください。以下にWindows 10の場合に想定される表示を載せておきます。        起動 　インストールをおこなった場合は，デスクトップなり，スタートメニューなり，アプリケーションフォルダなり，ドックなりにあるNetBeansのショートカットをダブルクリックして起動します。
+バイナリをダウンロードして解凍した場合は，できたフォルダの中の「bin」フォルダを開きます。
+32 bit Windows(x86)の場合は「netbeans.exe」を起動します。
+64 bit Windows(x64)の場合は「netbeans64.exe」を起動します。
+Macの場合は拡張子なしの「netbeans」ファイルを開きます。このとき権限の問題で起動できない場合があります。その場合はMacのシステム環境設定から規制を解除できます。詳しくはMacに詳しい人に聞いてください。
+起動したら，「Show On Startup」のチェックをはずしたうえで，「Start Page」を閉じます。  プロジェクトの作成 　NetBeansが扱うのは「プロジェクト」という単位です（例えばPowerPointが扱うのは.pptxという種類のファイル）。プロジェクトの実態はひとつのフォルダです。その中に，ソースコードやその他の情報が保存されています。このフォルダだけ他のPCに移動させれば，作業を再開できます。
+プロジェクトを作成するには，左上のオレンジ色の「New Project」というボタンを押します。  「Categories」から「Java with Ant」を選び，右の「Projects」から「Java Application」を選び，「Next」を押します。  このとき，最初だけ，「Download and Activate」というボタンが表示される場合があります。その場合はそれを押してアクティベートします。  そのとき，アクティベートが正常に終わらずエラーが出る場合があります。その場合は，「設定画面」（後述）の「General」の「Proxy Settings」を「No Proxy」にすることを試してください。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://sekiguchishu.github.io/docs/java/java_env/ide_install/" />
 
@@ -175,6 +185,32 @@ https://github.com/alex-shpak/hugo-book
     
       
 
+  <a href="/docs/prog_inst/" >
+      プログラミング入門
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
   <a href="/docs/dtm/" >
       DTM
   </a>
@@ -238,6 +274,134 @@ https://github.com/alex-shpak/hugo-book
 <article class="markdown">
 
 <h1 id="ideのインストール">IDEのインストール</h1>
+
+<h2 id="ideの選択">IDEの選択</h2>
+
+<p>　IDEはIntegrated Development Environment（統合開発環境）の略で，プログラミングを支援するための便利なソフトウェアです。IDEはプログラミングをするにあたって無くてはならないものです。IDEは様々な種類のものが存在し，その選択はほとんど好みの世界です。Java言語に対応しているIDEでよく使われるものとして，</p>
+
+<ul>
+<li>NetBeans</li>
+<li>Eclipse</li>
+<li>IntelliJ IDEA</li>
+</ul>
+
+<p>を挙げておきます。ここではNetBeansをインストールします。<br />
+　私はIDEで最も重要なことは入力補完機能の使いやすさだと思っています。補完の良し悪しでコーディングの効率が大きく変わってきます。上に挙げた3つのIDEの中で，NetBeansの補完が一番使いやすいと，個人的には思っています。</p>
+
+<h2 id="ダウンロード">ダウンロード</h2>
+
+<p>　まず「apache netbeans」で検索してみてください。執筆時点では以下のようなページがあらわれます。右上のDownloadをクリックします。<figure>
+    <img src="../IDE_download_1.png"/> 
+</figure>
+最新版の，緑色のDownloadボタンを押します（Latest LTS versionではなくLatest version）。<figure>
+    <img src="../IDE_download_2.png"/> 
+</figure>
+ここで選択肢が2つあります。インストールなし（ポータブル）で使いたい場合は「Binaries」のほうをクリックしてください。インストールしたい場合は，「Installers」のほうの，自身のOSのものをクリックしてください。<figure>
+    <img src="../IDE_download_3.png"/> 
+</figure>
+「We suggest the following mirror site for your download:」と書かれたリンクからダウンロードできます。<figure>
+    <img src="../IDE_download_4.png"/> 
+</figure>
+</p>
+
+<h2 id="インストール">インストール</h2>
+
+<p>　「Binaries」のほうをダウンロードした場合はzipを解凍し，できたフォルダを好きな場所に置きます。<br />
+　「Installers」のほうをダウンロードした場合は，インストーラを起動し，「Next」などをクリックしてインストールを完了させます。インストーラの途中の設定はデフォルトのままでよいでしょう。先にインストールしたJDKを，インストーラが認識しているかだけ確認してください。以下にWindows 10の場合に想定される表示を載せておきます。<figure>
+    <img src="../IDE_install_1.png"/> 
+</figure>
+<figure>
+    <img src="../IDE_install_2.png"/> 
+</figure>
+<figure>
+    <img src="../IDE_install_3.png"/> 
+</figure>
+<figure>
+    <img src="../IDE_install_4.png"/> 
+</figure>
+</p>
+
+<h2 id="起動">起動</h2>
+
+<p>　インストールをおこなった場合は，デスクトップなり，スタートメニューなり，アプリケーションフォルダなり，ドックなりにあるNetBeansのショートカットをダブルクリックして起動します。<br />
+　バイナリをダウンロードして解凍した場合は，できたフォルダの中の「bin」フォルダを開きます。<br />
+　32 bit Windows(x86)の場合は「netbeans.exe」を起動します。<br />
+　64 bit Windows(x64)の場合は「netbeans64.exe」を起動します。<br />
+　Macの場合は拡張子なしの「netbeans」ファイルを開きます。このとき権限の問題で起動できない場合があります。その場合はMacのシステム環境設定から規制を解除できます。詳しくはMacに詳しい人に聞いてください。<br />
+　起動したら，「Show On Startup」のチェックをはずしたうえで，「Start Page」を閉じます。<figure>
+    <img src="../netbeans_1.png"/> 
+</figure>
+</p>
+
+<h2 id="プロジェクトの作成">プロジェクトの作成</h2>
+
+<p>　NetBeansが扱うのは「プロジェクト」という単位です（例えばPowerPointが扱うのは.pptxという種類のファイル）。プロジェクトの実態はひとつのフォルダです。その中に，ソースコードやその他の情報が保存されています。このフォルダだけ他のPCに移動させれば，作業を再開できます。<br />
+　プロジェクトを作成するには，左上のオレンジ色の「New Project」というボタンを押します。<figure>
+    <img src="../netbeans_2.png"/> 
+</figure>
+「Categories」から「Java with Ant」を選び，右の「Projects」から「Java Application」を選び，「Next」を押します。<figure>
+    <img src="../netbeans_3.png"/> 
+</figure>
+このとき，最初だけ，「Download and Activate」というボタンが表示される場合があります。その場合はそれを押してアクティベートします。<figure>
+    <img src="../netbeans_4.png"/> 
+</figure>
+そのとき，アクティベートが正常に終わらずエラーが出る場合があります。その場合は，「設定画面」（<a href="#初期設定">後述</a>）の「General」の「Proxy Settings」を「No Proxy」にすることを試してください。<br />
+　「Next」をクリックして，プロジェクトの名前と，作成されるプロジェクトフォルダの場所を決め，Finishを押します。<figure>
+    <img src="../netbeans_5.png"/> 
+</figure>
+
+　既存のプロジェクトを開くには，さきほどの「New Project」のボタンの右隣のボタンを押します。<br />
+　開いているプロジェクトを閉じるには，プロジェクト名（コーヒーカップのマーク）を右クリックし，「Close」を押します。</p>
+
+<h2 id="パッケージについて">パッケージについて</h2>
+
+<p>　NetBeansはプロジェクトという単位を扱うといいましたが，このプロジェクトという単位は，IDEの都合によるもので，Java言語には直接関係しません（Javaの言語仕様にはプロジェクトという概念は登場しない）。Javaには，複数のソースコード（正確にはクラス）をまとめるための「パッケージ」という概念が存在します。さきほど作ったプロジェクトのプロジェクト名のツリーを開くと，「Source Packages」という項目があります。そのツリーを開くと，さきほど入力したプロジェクト名を全て小文字にした名前が現れたと思います（黄色い田マーク）。これがパッケージです。新しいパッケージを作るには，<strong>「Source Packages」を右クリック</strong>し，「New」から「Java Package」を選びます。<br />
+　すでにできていたほうのパッケージのツリーを開くと，プロジェクト名と同じ名前の「ドットjavaファイル」があると思います。これが実際にコーディングをおこなっていくソースコードです。新しいソースコードを作るには，<strong>パッケージ名を右クリック</strong>し，「New」から「Java Class」を選びます。パッケージやソースコードを削除するには，項目を右クリックし「Delete」を選びます。</p>
+
+<h2 id="初期設定">初期設定</h2>
+
+<p>　コーディングをおこなううえで便利なことを最初に設定しておきます。<br />
+　まず，アイコンが横一列に並んでいるバーの，アイコンが何も無いところを右クリックし，「Customize」を押します。一覧から「Run File」という，オレンジ色の四角に緑三角のアイコンを見つけ，それをバーの好きな場所にドラッグアンドドロップします。緑三角の右隣がおすすめです。「Run File」のボタンは，現在編集しているソースコードを実行するときに使います。<br />
+　次に各種設定を行います。Windowsの場合はToolsからOptionsを選びます。Macの場合はりんごマークの右隣のNetBeansからPreferencesを選びます。<figure>
+    <img src="../netbeans_6.png"/> 
+</figure>
+この画面が「設定画面」です。各設定が終わるたび，念のため「Apply」を押してください。<br />
+　まずはEditorのFormattingタブを選びます。LanguageからJavaを選び，CategoryからTabs And Indentsを選びます。Use All Language Settingsのチェックを外し，Expand Tabs to Spacesのチェックを外します。Number of Spaces per IndentとTab Sizeをともに4にします。次にCode Completionタブを選び，LanguageからJavaを選びます。Guess Filled Method ArgumentsとAuto Popup on Typing Any Java Identifier PartとSubword completionに全てチェックを入れます。Auto Popup Triggers for Javaの欄にはすでに「.」（ドット）が入力されていると思いますが，ドットは残したまま，そのあとに，「abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ」を追加してください。これにより，任意の文字を入力したときに補完機能が働くようになりました。これでEditorは終わりです。<br />
+　Fonts &amp; Colorsはお好みで設定してください。<br />
+　Keymapを開きます。このとき，Macの場合，ファンクションキーの動作を変更しておくことをおすすめします。Macのデフォルトでは，ファンクションキーは，音量変更などに割り当てられていると思いますが，これを切り替えます。切り替えると，ファンクションキー単押しは，本来のF5などの機能となり，音量変更などは，fnキーを押しながら各キーを押すことになります。切り替えるには，りんごマークからシステム環境設定，キーボードのアイコン，キーボードのタブをクリックし，「F1、F2などのすべてのキーを標準のファンクションキーとして使用」にチェックを入れます。NetBeansに戻ります。Search in Shortcutsの欄にF5を入力します。ContinueというアクションにF5が割り当てられていると思いますので，「…」マークを押し，Clearします。次にSearchの欄で「run file」と検索します。2通りのRun Fileが出てきたと思いますが，ProjectのほうのRun FileにF5を割り当ててください。割り当てるには「…」マークを押し，Editを押してF5を入力します。これで，F5を押すことでも，ファイルを実行することができるようになりました。</p>
+
+<h2 id="ライブラリの追加と削除">ライブラリの追加と削除</h2>
+
+<p>　あるプロジェクトで作成したソースコードの機能を別のプロジェクトでも使いたい場合があります（単に同じソースコードを別のプロジェクトにも作りたい場合はコピペすればよいだけだが）。そのときは，左のツリーの，自分のプロジェクトの，Librariesを右クリックし，Add Projectを選び，取り入れたいプロジェクトを選びます。<br />
+　ライブラリを削除（自分のプロジェクトへの登録を解除）したい場合，右クリックしてRemoveを選べばよいのですが，2019年時点で，このRemoveがグレーアウトして選べないという不具合があります。そのときは，自分のプロジェクト名を右クリックし，Propertiesをクリックし，ツリーからLibrariesを選び，Compileタブで，解除したいプロジェクトを選びRemoveを押します。<br />
+　同じ要領で，「jarファイル」という，Javaで書かれたライブラリのファイルをプロジェクトに追加することもできます。そのときはAdd JARを選んでください。</p>
+
+<h2 id="テンプレート">テンプレート</h2>
+
+<p>　新規プロジェクトや新規ファイルを作成したとき，デフォルトでコードが入力されていると思いますが，よくわからないコメントなどが入っており，毎回それを消すのが面倒です。そのときは，ToolsのTemplatesから，デフォルトで入力されるコードを変更できます。具体的にはJavaの中のJava ClassとJava Main Classを編集しておくと，毎回消す手間が省けます。<br />
+　Java Classは，</p>
+
+<pre><code>&lt;#if package?? &amp;&amp; package != &quot;&quot;&gt;
+package ${package};
+&lt;/#if&gt;
+public class ${name}{
+	
+}
+</code></pre>
+
+<p>Java Main Classは，</p>
+
+<pre><code>&lt;#if package?? &amp;&amp; package != &quot;&quot;&gt;
+package ${package};
+&lt;/#if&gt;
+public class ${name}{
+	public static void main(String[] args){
+		
+	}
+}
+</code></pre>
+
+<p>のようにして保存しておくとよいでしょう。</p>
 </article>
 
       
@@ -251,7 +415,18 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc levels-6 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#ideのインストール">IDEのインストール</a></li>
+<li><a href="#ideのインストール">IDEのインストール</a>
+<ul>
+<li><a href="#ideの選択">IDEの選択</a></li>
+<li><a href="#ダウンロード">ダウンロード</a></li>
+<li><a href="#インストール">インストール</a></li>
+<li><a href="#起動">起動</a></li>
+<li><a href="#プロジェクトの作成">プロジェクトの作成</a></li>
+<li><a href="#パッケージについて">パッケージについて</a></li>
+<li><a href="#初期設定">初期設定</a></li>
+<li><a href="#ライブラリの追加と削除">ライブラリの追加と削除</a></li>
+<li><a href="#テンプレート">テンプレート</a></li>
+</ul></li>
 </ul>
 </nav>
   </aside>
