@@ -29,7 +29,8 @@ JDKには複数の種類（OpenJDKなど）がありますが，ここではOrac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://sekiguchishu.github.io/docs/java/java_env/ide_install/</guid>
-      <description>IDEのインストール IDEの選択 　IDEはIntegrated Development Environment（統合開発環境）の略で，プログラミングを支援するための便利なソフトウェアです。IDEはプログラミングをするにあたって無くてはならないものです。IDEは様々な種類のものが存在し，その選択はほとんど好みの世界です。Java言語に対応しているIDEでよく使われるものとして，
+      <description>IDEのインストール ※先にJDKのインストールを終わらせてください。
+IDEの選択 　IDEはIntegrated Development Environment（統合開発環境）の略で，プログラミングを支援するための便利なソフトウェアです。IDEはプログラミングをするにあたって無くてはならないものです。IDEは様々な種類のものが存在し，その選択はほとんど好みの世界です。Java言語に対応しているIDEでよく使われるものとして，
  NetBeans Eclipse IntelliJ IDEA  を挙げておきます。ここではNetBeansをインストールします。
 私はIDEで最も重要なことは入力補完機能の使いやすさだと思っています。補完の良し悪しでコーディングの効率が大きく変わってきます。上に挙げた3つのIDEの中で，NetBeansの補完が一番使いやすいと，個人的には思っています。
 ダウンロード 　まず「apache netbeans」で検索してみてください。執筆時点では以下のようなページがあらわれます。右上のDownloadをクリックします。  最新版の，緑色のDownloadボタンを押します（Latest LTS versionではなくLatest version）。  ここで選択肢が2つあります。インストールなし（ポータブル）で使いたい場合は「Binaries」のほうをクリックしてください。インストールしたい場合は，「Installers」のほうの，自身のOSのものをクリックしてください。  「We suggest the following mirror site for your download:」と書かれたリンクからダウンロードできます。  インストール 　「Binaries」のほうをダウンロードした場合はzipを解凍し，できたフォルダを好きな場所に置きます。
