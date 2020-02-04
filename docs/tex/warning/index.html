@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Java" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="注意事項" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://sekiguchishu.github.io/docs/java/" />
+<meta property="og:url" content="http://sekiguchishu.github.io/docs/tex/warning/" />
 
-<title>Java | 関口 周のサイト</title>
+<title>注意事項 | 関口 周のサイト</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.d54f2886415be97240a76611f87e576a761d64c07020a767fa0ffd1bdc8bda93.css" integrity="sha256-1U8ohkFb6XJAp2YR&#43;H5XanYdZMBwIKdn&#43;g/9G9yL2pM=">
 
 
-<link rel="alternate" type="application/rss+xml" href="http://sekiguchishu.github.io/docs/java/index.xml" title="関口 周のサイト" />
+<link rel="alternate" type="application/rss+xml" href="http://sekiguchishu.github.io/docs/tex/warning/index.xml" title="関口 周のサイト" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -66,7 +66,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/docs/java/"  class="active">
+  <a href="/docs/java/" >
       Java
   </a>
 
@@ -77,38 +77,6 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-
-  
-  <ul>
-    
-      
-        
-
-  <li >
-    
-      
-
-  <a href="/docs/java/java_env/" >
-      Java開発環境の構築
-  </a>
-
-
-    
-
-    
-
-
-
-
-
-
-  </li>
-
-
-      
-    
-  </ul>
-  
 
 
 
@@ -161,6 +129,70 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+  
+  <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/tex/warning/"  class="active">
+      注意事項
+  </a>
+
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/tex/template/" >
+      卒論・修論テンプレート
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+  </ul>
+  
 
 
 
@@ -362,17 +394,24 @@ https://github.com/alex-shpak/hugo-book
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Java</strong>
+  <strong>注意事項</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="java">Java</h1>
+<h1 id="注意事項">注意事項</h1>
 
-<p>　Java言語について色々書きます。Javaは私の最も好きなプログラミング言語です。</p>
+<p>　TeXを使ううえでの注意事項を，重要な順に列挙します。</p>
 
-<p>・<a href="/docs/java/java_env/">Java開発環境の構築</a></p>
+<ul>
+<li><span style="color:red"><strong>ファイル名・フォルダ名は，半角英数字とアンダーバーだけにすべし</strong></span><br />
+ドットtexファイル本体の名前だけでなく，それに至るまでのフルパスにも，日本語は使ってはいけません。例えば，Windowsの場合，<br />
+&ldquo;C:\Users\shu\Desktop\卒論\template\tex\sotsuron_main.tex&rdquo;<br />
+のように，途中のフォルダ名に入っていてもだめです。また，図として挿入するPDFファイル名にも注意してください。日本語がだめなのはもちろん，<span style="color:red">「ドット」や「半角スペース」もだめです</span>。ただし拡張子のドットは大丈夫です。<br /></li>
+<li><span style="color:red"><strong>ベタ書き禁止，Figref，Tabrefを使うべし</strong></span><br />
+TeXのソースコード内で，<code>図~\ref{ラベル名}</code>や<code>Table.~\ref{ラベル名}</code>のように直接書かずに，<code>\Figref{ラベル名}</code>や<code>\Tabref{ラベル名}</code>と書くようにしましょう。他にも，<code>\Equref</code>（式），<code>\Chapref</code>（章），<code>\Secref</code>（節），<code>\Subsecref</code>（項），<code>\Subsubsecref</code>（目）があります。また，図のサイズや余白を調整する際，「センチメートル」や「pt」などの絶対量で指定するのではなく，<code>\textwidth</code>や<code>\columnwidth</code>などの相対量を使いましょう。</li>
+</ul>
 </article>
 
       
@@ -386,7 +425,7 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc levels-6 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#java">Java</a></li>
+<li><a href="#注意事項">注意事項</a></li>
 </ul>
 </nav>
   </aside>
