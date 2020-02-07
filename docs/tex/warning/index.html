@@ -404,14 +404,56 @@ https://github.com/alex-shpak/hugo-book
 
 <p>　TeXを使ううえでの注意事項を，重要な順に列挙します。</p>
 
-<ul>
-<li><span style="color:red"><strong>ファイル名・フォルダ名は，半角英数字とアンダーバーだけにすべし</strong></span><br />
-ドットtexファイル本体の名前だけでなく，それに至るまでのフルパスにも，日本語は使ってはいけません。例えば，Windowsの場合，<br />
+<h3 id="span-style-color-red-ファイル名-フォルダ名は-半角英数字とアンダーバーだけにすべし-span"><span style="color:red"><strong>ファイル名・フォルダ名は，半角英数字とアンダーバーだけにすべし</strong></span></h3>
+
+<p>　ドットtexファイル本体の名前だけでなく，それに至るまでのフルパスにも，日本語は使ってはいけません。例えば，Windowsの場合，<br />
 &ldquo;C:\Users\shu\Desktop\卒論\template\tex\sotsuron_main.tex&rdquo;<br />
-のように，途中のフォルダ名に入っていてもだめです。また，図として挿入するPDFファイル名にも注意してください。日本語がだめなのはもちろん，<span style="color:red">「ドット」や「半角スペース」もだめです</span>。ただし拡張子のドットは大丈夫です。<br /></li>
-<li><span style="color:red"><strong>ベタ書き禁止，Figref，Tabrefを使うべし</strong></span><br />
-TeXのソースコード内で，<code>図~\ref{ラベル名}</code>や<code>Table.~\ref{ラベル名}</code>のように直接書かずに，<code>\Figref{ラベル名}</code>や<code>\Tabref{ラベル名}</code>と書くようにしましょう。他にも，<code>\Equref</code>（式），<code>\Chapref</code>（章），<code>\Secref</code>（節），<code>\Subsecref</code>（項），<code>\Subsubsecref</code>（目）があります。また，図のサイズや余白を調整する際，「センチメートル」や「pt」などの絶対量で指定するのではなく，<code>\textwidth</code>や<code>\columnwidth</code>などの相対量を使いましょう。</li>
-</ul>
+のように，<span style="color:red">途中のフォルダ名に入っていてもだめです</span>。また，図として挿入するPDFファイル名にも注意してください。日本語がだめなのはもちろん，<span style="color:red">「ドット」や「半角スペース」もだめです</span>。ただし拡張子のドットは大丈夫です。</p>
+
+<h3 id="span-style-color-red-ベタ書き禁止-figref-tabref-chaprefを使うべし-span"><span style="color:red"><strong>ベタ書き禁止，Figref，Tabref，Chaprefを使うべし</strong></span></h3>
+
+<p>　TeXのソースコード内で，<code>図~\ref{ラベル名}</code>や<code>Table.~\ref{ラベル名}</code>のように直接書かずに，<code>\Figref{ラベル名}</code>や<code>\Tabref{ラベル名}</code>と書くようにしましょう。他にも，<code>\Equref</code>（式），<code>\Chapref</code>（章），<code>\Secref</code>（節），<code>\Subsecref</code>（項），<code>\Subsubsecref</code>（目）があります。</p>
+
+<h3 id="span-style-color-red-図のサイズは相対量で指定すべし-span"><span style="color:red"><strong>図のサイズは相対量で指定すべし</strong></span></h3>
+
+<p>　図や表のサイズ，余白の大きさなどを調整する際，「mm」や「pt」などの絶対量で指定するのではなく，<code>\textwidth</code>や<code>\columnwidth</code>などの相対量を使いましょう。</p>
+
+<h3 id="span-style-color-red-改行されないスペース-を使うべし-span"><span style="color:red"><strong>改行されないスペース「~」を使うべし</strong></span></h3>
+
+<p>　数字と単位の間，もしくは変数と単位の間にはスペースが要るので，<code>1.2 m</code>，<code>x [kg]</code>のように書きます。ところがそうすると，そのスペースのところで改行されてしまうおそれがあり，1.2<br />
+mのように不格好になってしまいます。それを避けるために，改行されないスペースというものがあり，<code>1.2~m</code>のように書きます。</p>
+
+<h3 id="span-style-color-red-ベクターイメージとラスターイメージを理解すべし-span"><span style="color:red"><strong>ベクターイメージとラスターイメージを理解すべし</strong></span></h3>
+
+<p>　ベクターイメージとは，「この座標からこの座標に直線が通っています」のような，描画に関する情報のみを保存する画像データ形式です。それに対してラスターイメージとは，「このピクセルは赤，その隣のピクセルは青，…」というように，1点ごとに情報を保存する画像データ形式です。ベクターイメージとラスターイメージには，それぞれ得意不得意があります。たとえば実験結果のグラフのような画像は，基本的には線の通っている座標さえ分かれば再現できますから，ベクターイメージが適しています。対して，カメラで撮った写真のような画像はラスターイメージが適しています。またベクターイメージには，拡大しても画質が荒くならないという特長があります。以上をふまえて，基本的に，論文に載せるグラフなどは，ベクターイメージであるPDF形式で保存して，texに挿入しましょう。例外として，写真が含まれる場合は，PDF化しても意味が無いので，jpgやpngのまま挿入しましょう。</p>
+
+<h3 id="span-style-color-red-と-の違いを理解すべし-span"><span style="color:red"><strong>「./」と「../」の違いを理解すべし</strong></span></h3>
+
+<p>　texファイルに画像を挿入する際，画像のパスを記述する必要があります。その際，そのtexファイルが保存されている位置から見た，相対パスを指定します。このとき「./」はカレントディレクトリ，つまりそのtexファイルと同じフォルダを指します。対して「../」はペアレントディレクトリ，つまりそのtexファイルが所属しているフォルダのひとつ上の階層のフォルダを指します。テンプレートでは，TeXソースファイルを格納する「tex」フォルダと，画像ファイルを格納する「fig」フォルダが同じ階層にあるので，texファイルから画像ファイルへの相対パスは，一度「../」によって階層をひとつ上がり，そこから「../fig/～」のように下がっていく，という書き方をしています。それと異なり，例えばtexファイルと同じ階層に「a.jpg」というファイルがあるなら「./a.jpg」のように指定します。</p>
+
+<h3 id="span-style-color-red-h-と-h-の違いを理解すべし-span"><span style="color:red"><strong>「h」と「H」の違いを理解すべし</strong></span></h3>
+
+<p>　TeXに図を挿入するとき，その位置を制御するオプションはいくつかの種類があります。基本的には「h」を使っておけばよいのですが，どうしてもその位置に固定したいというときは「H」を使いましょう。</p>
+
+<h3 id="span-style-color-red-分割コンパイルすべし-span"><span style="color:red"><strong>分割コンパイルすべし</strong></span></h3>
+
+<p>　論文の執筆は，章ごと，あるいは節ごとにファイルを分けておこないましょう。テンプレートは章ごとになっています。各章のファイルも，単体でコンパイルできるようになっています。ただし注意点として，章番号は1になります。また，そのファイルの中に無い参照（citeや，別の章に対するSecrefなど）は，表示が??になります。1になったり??になったりせずに，本番通りの状況で確認したい場合は，mainをコンパイルしてください。ただし時間はかかります。</p>
+
+<h3 id="span-style-color-red-表ジェネレーターを使うべし-span"><span style="color:red"><strong>表ジェネレーターを使うべし</strong></span></h3>
+
+<p>　TeXの欠点のひとつが，表を扱いづらいところです。特に，大規模な表をTeXのコマンドに沿って手入力するのは時間の無駄です。表ジェネレーターを使いましょう。Webで「tex 表ジェネレーター」で検索すればいくらでも出てきます。また，TeXの表は融通が利かないので，Excelで作った表をPDF化して挿入するのも手です。その場合，キャプションが「図 1.1」のようになってしまうので，<code>\begin{table}</code>の中に<code>\includegraphics</code>を入れるという手法をとりましょう。</p>
+
+<h3 id="span-style-color-red-左側をパンチ穴で綴じるため-テンプレートでは-全体を少し右に寄せている-span"><span style="color:red"><strong>左側をパンチ穴で綴じるため，テンプレートでは，全体を少し右に寄せている</strong></span></h3>
+
+<p>　電子データを提出する（修論のみ）際には，この右寄せは，無いほうがいいのかもしれません（私は電子データも右に寄せたまま提出しました）。</p>
+
+<h3 id="span-style-color-red-段落字下げのために全角スペースを入れるべからず-span"><span style="color:red"><strong>段落字下げのために全角スペースを入れるべからず</strong></span></h3>
+
+<p>　TeXは自動で段落字下げをしてくれます。わざわざ全角スペースを入れないようにしましょう。段落を変えたければ，<code>\par</code>を使います。</p>
+
+<h3 id="span-style-color-red-あるかもしれない-精神でググるべし-span"><span style="color:red"><strong>「あるかもしれない」精神でググるべし</strong></span></h3>
+
+<p>　TeXでやりたいと思ったことは，たいてい誰かがすでにやっています。TeXの各種コマンドは非常に豊富なので，やりたいことがあったらまずはググりましょう。また，TeXは，基本的な書き方さえ習得すれば，あとはその都度ググる，という方法でなんとかなります。</p>
 </article>
 
       
@@ -425,7 +467,24 @@ TeXのソースコード内で，<code>図~\ref{ラベル名}</code>や<code>Tab
   <aside class="book-toc levels-6 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#注意事項">注意事項</a></li>
+<li><a href="#注意事項">注意事項</a>
+<ul>
+<li>
+<ul>
+<li><a href="#span-style-color-red-ファイル名-フォルダ名は-半角英数字とアンダーバーだけにすべし-span"><span style="color:red"><strong>ファイル名・フォルダ名は，半角英数字とアンダーバーだけにすべし</strong></span></a></li>
+<li><a href="#span-style-color-red-ベタ書き禁止-figref-tabref-chaprefを使うべし-span"><span style="color:red"><strong>ベタ書き禁止，Figref，Tabref，Chaprefを使うべし</strong></span></a></li>
+<li><a href="#span-style-color-red-図のサイズは相対量で指定すべし-span"><span style="color:red"><strong>図のサイズは相対量で指定すべし</strong></span></a></li>
+<li><a href="#span-style-color-red-改行されないスペース-を使うべし-span"><span style="color:red"><strong>改行されないスペース「~」を使うべし</strong></span></a></li>
+<li><a href="#span-style-color-red-ベクターイメージとラスターイメージを理解すべし-span"><span style="color:red"><strong>ベクターイメージとラスターイメージを理解すべし</strong></span></a></li>
+<li><a href="#span-style-color-red-と-の違いを理解すべし-span"><span style="color:red"><strong>「./」と「../」の違いを理解すべし</strong></span></a></li>
+<li><a href="#span-style-color-red-h-と-h-の違いを理解すべし-span"><span style="color:red"><strong>「h」と「H」の違いを理解すべし</strong></span></a></li>
+<li><a href="#span-style-color-red-分割コンパイルすべし-span"><span style="color:red"><strong>分割コンパイルすべし</strong></span></a></li>
+<li><a href="#span-style-color-red-表ジェネレーターを使うべし-span"><span style="color:red"><strong>表ジェネレーターを使うべし</strong></span></a></li>
+<li><a href="#span-style-color-red-左側をパンチ穴で綴じるため-テンプレートでは-全体を少し右に寄せている-span"><span style="color:red"><strong>左側をパンチ穴で綴じるため，テンプレートでは，全体を少し右に寄せている</strong></span></a></li>
+<li><a href="#span-style-color-red-段落字下げのために全角スペースを入れるべからず-span"><span style="color:red"><strong>段落字下げのために全角スペースを入れるべからず</strong></span></a></li>
+<li><a href="#span-style-color-red-あるかもしれない-精神でググるべし-span"><span style="color:red"><strong>「あるかもしれない」精神でググるべし</strong></span></a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
   </aside>
