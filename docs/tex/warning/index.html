@@ -414,6 +414,10 @@ https://github.com/alex-shpak/hugo-book
 
 <p>　TeXのソースコード内で，<code>図~\ref{ラベル名}</code>や<code>Table.~\ref{ラベル名}</code>のように直接書かずに，<code>\Figref{ラベル名}</code>や<code>\Tabref{ラベル名}</code>と書くようにしましょう。他にも，<code>\Equref</code>（式），<code>\Chapref</code>（章），<code>\Secref</code>（節），<code>\Subsecref</code>（項），<code>\Subsubsecref</code>（目）があります。</p>
 
+<h3 id="span-style-color-red-様式は自己責任で確認すべし-span"><span style="color:red"><strong>様式は自己責任で確認すべし</strong></span></h3>
+
+<p>　論文のフォーマット，特に，表紙の様式などは，私が在籍していた当時と変わっているおそれもあります。ご自身でしっかり確認してください。</p>
+
 <h3 id="span-style-color-red-図のサイズは相対量で指定すべし-span"><span style="color:red"><strong>図のサイズは相対量で指定すべし</strong></span></h3>
 
 <p>　図や表のサイズ，余白の大きさなどを調整する際，「mm」や「pt」などの絶対量で指定するのではなく，<code>\textwidth</code>や<code>\columnwidth</code>などの相対量を使いましょう。</p>
@@ -454,6 +458,10 @@ mのように不格好になってしまいます。それを避けるために�
 <h3 id="span-style-color-red-あるかもしれない-精神でググるべし-span"><span style="color:red"><strong>「あるかもしれない」精神でググるべし</strong></span></h3>
 
 <p>　TeXでやりたいと思ったことは，たいてい誰かがすでにやっています。TeXの各種コマンドは非常に豊富なので，やりたいことがあったらまずはググりましょう。また，TeXは，基本的な書き方さえ習得すれば，あとはその都度ググる，という方法でなんとかなります。</p>
+
+<h3 id="span-style-color-red-rmの使い方に注意すべし-span"><span style="color:red"><strong>rmの使い方に注意すべし</strong></span></h3>
+
+<p>　数式のドルマークの中で，単位を入れるときは，斜体ではなく立体にしたいです。そのときは，<code>$1.0\times 10^3~\mathrm{[m]}$</code>のように書きます。同様の用途で，<code>\rm</code>というコマンドがあるのですが，これは，以降をすべて立体にしてしまうので，<code>\rm{[m]}</code><span style="color:red">ではなく</span>，<code>{\rm [m]}</code>のように，中括弧の中で使います。</p>
 </article>
 
       
@@ -473,6 +481,7 @@ mのように不格好になってしまいます。それを避けるために�
 <ul>
 <li><a href="#span-style-color-red-ファイル名-フォルダ名は-半角英数字とアンダーバーだけにすべし-span"><span style="color:red"><strong>ファイル名・フォルダ名は，半角英数字とアンダーバーだけにすべし</strong></span></a></li>
 <li><a href="#span-style-color-red-ベタ書き禁止-figref-tabref-chaprefを使うべし-span"><span style="color:red"><strong>ベタ書き禁止，Figref，Tabref，Chaprefを使うべし</strong></span></a></li>
+<li><a href="#span-style-color-red-様式は自己責任で確認すべし-span"><span style="color:red"><strong>様式は自己責任で確認すべし</strong></span></a></li>
 <li><a href="#span-style-color-red-図のサイズは相対量で指定すべし-span"><span style="color:red"><strong>図のサイズは相対量で指定すべし</strong></span></a></li>
 <li><a href="#span-style-color-red-改行されないスペース-を使うべし-span"><span style="color:red"><strong>改行されないスペース「~」を使うべし</strong></span></a></li>
 <li><a href="#span-style-color-red-ベクターイメージとラスターイメージを理解すべし-span"><span style="color:red"><strong>ベクターイメージとラスターイメージを理解すべし</strong></span></a></li>
@@ -483,6 +492,7 @@ mのように不格好になってしまいます。それを避けるために�
 <li><a href="#span-style-color-red-左側をパンチ穴で綴じるため-テンプレートでは-全体を少し右に寄せている-span"><span style="color:red"><strong>左側をパンチ穴で綴じるため，テンプレートでは，全体を少し右に寄せている</strong></span></a></li>
 <li><a href="#span-style-color-red-段落字下げのために全角スペースを入れるべからず-span"><span style="color:red"><strong>段落字下げのために全角スペースを入れるべからず</strong></span></a></li>
 <li><a href="#span-style-color-red-あるかもしれない-精神でググるべし-span"><span style="color:red"><strong>「あるかもしれない」精神でググるべし</strong></span></a></li>
+<li><a href="#span-style-color-red-rmの使い方に注意すべし-span"><span style="color:red"><strong>rmの使い方に注意すべし</strong></span></a></li>
 </ul></li>
 </ul></li>
 </ul>
