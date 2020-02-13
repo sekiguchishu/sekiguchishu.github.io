@@ -4,20 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="IDEのインストール" />
-<meta property="og:description" content="IDEのインストール ※先にJDKのインストールを終わらせてください。
-IDEの選択 　IDEはIntegrated Development Environment（統合開発環境）の略で，プログラミングを支援するための便利なソフトウェアです。IDEはプログラミングをするにあたって無くてはならないものです。IDEは様々な種類のものが存在し，その選択はほとんど好みの世界です。Java言語に対応しているIDEでよく使われるものとして，
- NetBeans Eclipse IntelliJ IDEA  を挙げておきます。ここではNetBeansをインストールします。
-私はIDEで最も重要なことは入力補完機能の使いやすさだと思っています。補完の良し悪しでコーディングの効率が大きく変わってきます。上に挙げた3つのIDEの中で，NetBeansの補完が一番使いやすいと，個人的には思っています。
-ダウンロード 　まず「apache netbeans」で検索してみてください。執筆時点では以下のようなページがあらわれます。右上のDownloadをクリックします。  最新版の，緑色のDownloadボタンを押します（Latest LTS versionではなくLatest version）。  ここで選択肢が2つあります。インストールなし（ポータブル）で使いたい場合は「Binaries」のほうをクリックしてください。インストールしたい場合は，「Installers」のほうの，自身のOSのものをクリックしてください。  「We suggest the following mirror site for your download:」と書かれたリンクからダウンロードできます。  インストール 　「Binaries」のほうをダウンロードした場合はzipを解凍し，できたフォルダを好きな場所に置きます。
-「Installers」のほうをダウンロードした場合は，インストーラを起動し，「Next」などをクリックしてインストールを完了させます。インストーラの途中の設定はデフォルトのままでよいでしょう。先にインストールしたJDKを，インストーラが認識しているかだけ確認してください。以下にWindows 10の場合に想定される表示を載せておきます。        起動 　インストールをおこなった場合は，デスクトップなり，スタートメニューなり，アプリケーションフォルダなり，ドックなりにあるNetBeansのショートカットをダブルクリックして起動します。
-バイナリをダウンロードして解凍した場合は，できたフォルダの中の「bin」フォルダを開きます。
-32 bit Windows(x86)の場合は「netbeans.exe」を起動します。
-64 bit Windows(x64)の場合は「netbeans64.exe」を起動します。
-Macの場合は拡張子なしの「netbeans」ファイルを開きます。このとき権限の問題で起動できない場合があります。その場合はMacのシステム環境設定から規制を解除できます。詳しくはMacに詳しい人に聞いてください。
-起動したら，「Show On Startup」のチェックをはずしたうえで，「Start Page」を閉じます。  プロジェクトの作成 　NetBeansが扱うのは「プロジェクト」という単位です（例えばPowerPointが扱うのは.pptxという種類のファイル）。プロジェクトの実態はひとつのフォルダです。その中に，ソースコードやその他の情報が保存されています。このフォルダだけ他のPCに移動させれば，作業を再開できます。
-プロジェクトを作成するには，左上のオレンジ色の「New Project」というボタンを押します。  「Categories」から「Java with Ant」を選び，右の「Projects」から「Java Application」を選び，「Next」を押します。  このとき，最初だけ，「Download and Activate」というボタンが表示される場合があります。その場合はそれを押してアクティベートします。  そのとき，アクティベートが正常に終わらずエラーが出る場合があります。その場合は，「設定画面」（後述）の「General」の「Proxy Settings」を「No Proxy」にすることを試してください。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://sekiguchishu.github.io/docs/java/java_env/ide_install/" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://sekiguchishu.github.io/docs/java/env/ide_install/" />
 
 <title>IDEのインストール | 関口 周のサイト</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -26,6 +15,7 @@ Macの場合は拡張子なしの「netbeans」ファイルを開きます。こ
 <link rel="stylesheet" href="/book.min.d54f2886415be97240a76611f87e576a761d64c07020a767fa0ffd1bdc8bda93.css" integrity="sha256-1U8ohkFb6XJAp2YR&#43;H5XanYdZMBwIKdn&#43;g/9G9yL2pM=">
 
 
+<link rel="alternate" type="application/rss+xml" href="http://sekiguchishu.github.io/docs/java/env/ide_install/index.xml" title="関口 周のサイト" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -98,7 +88,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/docs/java/java_env/" >
+  <a href="/docs/java/env/" >
       Java開発環境の構築
   </a>
 
@@ -114,23 +104,61 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
-        <li>
+        
 
-  <a href="/docs/java/java_env/jdk_install/" >
+  <li >
+    
+      
+
+  <a href="/docs/java/env/jdk_install/" >
       JDKのインストール
   </a>
 
-</li>
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
       
     
       
-        <li>
+        
 
-  <a href="/docs/java/java_env/ide_install/"  class="active">
+  <li >
+    
+      
+
+  <a href="/docs/java/env/ide_install/"  class="active">
       IDEのインストール
   </a>
 
-</li>
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
       
     
   </ul>
@@ -238,7 +266,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/docs/prog_inst/" >
+  <a href="/docs/programming/" >
       プログラミング入門
   </a>
 
@@ -406,7 +434,7 @@ https://github.com/alex-shpak/hugo-book
 
 <h1 id="ideのインストール">IDEのインストール</h1>
 
-<p>※先にJDKのインストールを終わらせてください。</p>
+<p>※先に<a href="/docs/java/env/jdk_install/">JDKのインストール</a>を終わらせてください。</p>
 
 <h2 id="ideの選択">IDEの選択</h2>
 
@@ -424,33 +452,33 @@ https://github.com/alex-shpak/hugo-book
 <h2 id="ダウンロード">ダウンロード</h2>
 
 <p>　まず「apache netbeans」で検索してみてください。執筆時点では以下のようなページがあらわれます。右上のDownloadをクリックします。<figure>
-    <img src="../IDE_download_1.png"/> 
+    <img src="./IDE_download_1.png"/> 
 </figure>
 最新版の，緑色のDownloadボタンを押します（Latest LTS versionではなくLatest version）。<figure>
-    <img src="../IDE_download_2.png"/> 
+    <img src="./IDE_download_2.png"/> 
 </figure>
 ここで選択肢が2つあります。インストールなし（ポータブル）で使いたい場合は「Binaries」のほうをクリックしてください。インストールしたい場合は，「Installers」のほうの，自身のOSのものをクリックしてください。<figure>
-    <img src="../IDE_download_3.png"/> 
+    <img src="./IDE_download_3.png"/> 
 </figure>
 「We suggest the following mirror site for your download:」と書かれたリンクからダウンロードできます。<figure>
-    <img src="../IDE_download_4.png"/> 
+    <img src="./IDE_download_4.png"/> 
 </figure>
 </p>
 
 <h2 id="インストール">インストール</h2>
 
 <p>　「Binaries」のほうをダウンロードした場合はzipを解凍し，できたフォルダを好きな場所に置きます。<br />
-　「Installers」のほうをダウンロードした場合は，インストーラを起動し，「Next」などをクリックしてインストールを完了させます。インストーラの途中の設定はデフォルトのままでよいでしょう。先にインストールしたJDKを，インストーラが認識しているかだけ確認してください。以下にWindows 10の場合に想定される表示を載せておきます。<figure>
-    <img src="../IDE_install_1.png"/> 
+　「Installers」のほうをダウンロードした場合は，インストーラーを起動し，「Next」などをクリックしてインストールを完了させます。インストーラーの途中の設定はデフォルトのままでよいでしょう。先にインストールしたJDKを，インストーラーが認識しているかだけ確認してください。以下にWindows 10の場合に想定される表示を載せておきます。<figure>
+    <img src="./IDE_install_1.png"/> 
 </figure>
 <figure>
-    <img src="../IDE_install_2.png"/> 
+    <img src="./IDE_install_2.png"/> 
 </figure>
 <figure>
-    <img src="../IDE_install_3.png"/> 
+    <img src="./IDE_install_3.png"/> 
 </figure>
 <figure>
-    <img src="../IDE_install_4.png"/> 
+    <img src="./IDE_install_4.png"/> 
 </figure>
 </p>
 
@@ -462,7 +490,7 @@ https://github.com/alex-shpak/hugo-book
 　64 bit Windows(x64)の場合は「netbeans64.exe」を起動します。<br />
 　Macの場合は拡張子なしの「netbeans」ファイルを開きます。このとき権限の問題で起動できない場合があります。その場合はMacのシステム環境設定から規制を解除できます。詳しくはMacに詳しい人に聞いてください。<br />
 　起動したら，「Show On Startup」のチェックをはずしたうえで，「Start Page」を閉じます。<figure>
-    <img src="../netbeans_1.png"/> 
+    <img src="./netbeans_1.png"/> 
 </figure>
 </p>
 
@@ -470,17 +498,17 @@ https://github.com/alex-shpak/hugo-book
 
 <p>　NetBeansが扱うのは「プロジェクト」という単位です（例えばPowerPointが扱うのは.pptxという種類のファイル）。プロジェクトの実態はひとつのフォルダです。その中に，ソースコードやその他の情報が保存されています。このフォルダだけ他のPCに移動させれば，作業を再開できます。<br />
 　プロジェクトを作成するには，左上のオレンジ色の「New Project」というボタンを押します。<figure>
-    <img src="../netbeans_2.png"/> 
+    <img src="./netbeans_2.png"/> 
 </figure>
 「Categories」から「Java with Ant」を選び，右の「Projects」から「Java Application」を選び，「Next」を押します。<figure>
-    <img src="../netbeans_3.png"/> 
+    <img src="./netbeans_3.png"/> 
 </figure>
 このとき，最初だけ，「Download and Activate」というボタンが表示される場合があります。その場合はそれを押してアクティベートします。<figure>
-    <img src="../netbeans_4.png"/> 
+    <img src="./netbeans_4.png"/> 
 </figure>
 そのとき，アクティベートが正常に終わらずエラーが出る場合があります。その場合は，「設定画面」（<a href="#初期設定">後述</a>）の「General」の「Proxy Settings」を「No Proxy」にすることを試してください。<br />
 　「Next」をクリックして，プロジェクトの名前と，作成されるプロジェクトフォルダの場所を決め，Finishを押します。<figure>
-    <img src="../netbeans_5.png"/> 
+    <img src="./netbeans_5.png"/> 
 </figure>
 
 　既存のプロジェクトを開くには，さきほどの「New Project」のボタンの右隣のボタンを押します。<br />
@@ -497,7 +525,7 @@ https://github.com/alex-shpak/hugo-book
 <p>　コーディングをおこなううえで便利なことを最初に設定しておきます。<br />
 　まず，アイコンが横一列に並んでいるバーの，アイコンが何も無いところを右クリックし，「Customize」を押します。一覧から「Run File」という，オレンジ色の四角に緑三角のアイコンを見つけ，それをバーの好きな場所にドラッグアンドドロップします。緑三角の右隣がおすすめです。「Run File」のボタンは，現在編集しているソースコードを実行するときに使います。<br />
 　次に各種設定を行います。Windowsの場合はToolsからOptionsを選びます。Macの場合はりんごマークの右隣のNetBeansからPreferencesを選びます。<figure>
-    <img src="../netbeans_6.png"/> 
+    <img src="./netbeans_6.png"/> 
 </figure>
 この画面が「設定画面」です。各設定が終わるたび，念のため「Apply」を押してください。<br />
 　まずはEditorのFormattingタブを選びます。LanguageからJavaを選び，CategoryからTabs And Indentsを選びます。Use All Language Settingsのチェックを外し，Expand Tabs to Spacesのチェックを外します。Number of Spaces per IndentとTab Sizeをともに4にします。次にCode Completionタブを選び，LanguageからJavaを選びます。Guess Filled Method ArgumentsとAuto Popup on Typing Any Java Identifier PartとSubword completionに全てチェックを入れます。Auto Popup Triggers for Javaの欄にはすでに「.」（ドット）が入力されていると思いますが，ドットは残したまま，そのあとに，「abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ」を追加してください。これにより，任意の文字を入力したときに補完機能が働くようになりました。これでEditorは終わりです。<br />

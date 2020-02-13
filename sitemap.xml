@@ -3,11 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://sekiguchishu.github.io/docs/java/java_env/jdk_install/</loc>
+    <loc>http://sekiguchishu.github.io/docs/java/env/jdk_install/</loc>
   </url>
   
   <url>
-    <loc>http://sekiguchishu.github.io/docs/java/java_env/ide_install/</loc>
+    <loc>http://sekiguchishu.github.io/docs/java/env/ide_install/</loc>
   </url>
   
   <url>
@@ -15,7 +15,7 @@
   </url>
   
   <url>
-    <loc>http://sekiguchishu.github.io/docs/java/java_env/</loc>
+    <loc>http://sekiguchishu.github.io/docs/java/env/</loc>
   </url>
   
   <url>
@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>http://sekiguchishu.github.io/docs/nim/nim_env/</loc>
+    <loc>http://sekiguchishu.github.io/docs/nim/env/</loc>
   </url>
   
   <url>
@@ -43,7 +43,11 @@
   </url>
   
   <url>
-    <loc>http://sekiguchishu.github.io/docs/prog_inst/</loc>
+    <loc>http://sekiguchishu.github.io/docs/tex/env/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/programming/</loc>
   </url>
   
   <url>
@@ -52,6 +56,14 @@
   
   <url>
     <loc>http://sekiguchishu.github.io/docs/reco/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/tex/env/install/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sekiguchishu.github.io/docs/tex/env/settings/</loc>
   </url>
   
   <url>

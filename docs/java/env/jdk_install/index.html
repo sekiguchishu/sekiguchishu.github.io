@@ -4,13 +4,9 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="JDKのインストール" />
-<meta property="og:description" content="JDKのインストール JDKとは 　JDKはJava Development Kitの略です。JDKには，Javaで書かれたソースコードをコンパイルするためのコンパイラや，そのコンパイル結果（バイトコードとよぶ）を実行するためのバーチャルマシンなどが含まれています。コンパイルの意味が分からない方は，プログラミング入門をご覧ください。
-バーチャルマシンとは簡単にいうと，コンピュータの中に（CPUの上に）仮想的に作られたコンピュータのことです。C言語などのような言語で書かれたソースコードをコンパイルして出来上がったファイルに含まれる機械語は，特定の種類のCPU上でしか解釈・実行できません。ところがJava言語で書かれたソースコードをコンパイルして出来上がったファイルに含まれるバイトコードは，バーチャルマシンが解釈・実行できます。つまり，CPUの種類が違っても，その上に作られたバーチャルマシンさえ共通化しておけば，どんなプラットフォーム上でも動く（クロスプラットフォームな）実行ファイルを作れるというわけです。
-JDKには複数の種類（OpenJDKなど）がありますが，ここではOracle社が提供している，いわば公式のJDKをインストールします。
-ダウンロード 　まずはインストーラをダウンロードします。「jdk 13」で検索してください。執筆時点では最新バージョンは13ですが，適宜読み替えてください。「Java SE Development Kit 13 - Downloads - Oracle」というような名前のページを開きます。  ページ下部にこのような表示があると思いますので，「Accept License Agreement」のラジオボタンをクリックしたうえで，Windowsの方は「.exe」のものを，Macの方は「.dmg」のものをダウンロードしてください。
-インストール 　ダウンロードしたファイルを起動（Windowsの場合は.exeファイルをダブルクリック，Macの場合は.dmgファイルをダブルクリックしてマウントし，その中にある.pkgファイルをダブルクリック）し，「次」などを押してインストールを完了させてください。インストール先はデフォルトのままがよいでしょう。以下にWindows 10の場合に想定される表示を載せておきます。      ・IDEのインストールへ進む" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://sekiguchishu.github.io/docs/java/java_env/jdk_install/" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://sekiguchishu.github.io/docs/java/env/jdk_install/" />
 
 <title>JDKのインストール | 関口 周のサイト</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
@@ -19,6 +15,7 @@ JDKには複数の種類（OpenJDKなど）がありますが，ここではOrac
 <link rel="stylesheet" href="/book.min.d54f2886415be97240a76611f87e576a761d64c07020a767fa0ffd1bdc8bda93.css" integrity="sha256-1U8ohkFb6XJAp2YR&#43;H5XanYdZMBwIKdn&#43;g/9G9yL2pM=">
 
 
+<link rel="alternate" type="application/rss+xml" href="http://sekiguchishu.github.io/docs/java/env/jdk_install/index.xml" title="関口 周のサイト" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -91,7 +88,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/docs/java/java_env/" >
+  <a href="/docs/java/env/" >
       Java開発環境の構築
   </a>
 
@@ -107,23 +104,61 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
-        <li>
+        
 
-  <a href="/docs/java/java_env/jdk_install/"  class="active">
+  <li >
+    
+      
+
+  <a href="/docs/java/env/jdk_install/"  class="active">
       JDKのインストール
   </a>
 
-</li>
+
+    
+
+    
+
+
+
+
+  
+  <ul>
+    
+  </ul>
+  
+
+
+
+  </li>
+
+
       
     
       
-        <li>
+        
 
-  <a href="/docs/java/java_env/ide_install/" >
+  <li >
+    
+      
+
+  <a href="/docs/java/env/ide_install/" >
       IDEのインストール
   </a>
 
-</li>
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
       
     
   </ul>
@@ -231,7 +266,7 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/docs/prog_inst/" >
+  <a href="/docs/programming/" >
       プログラミング入門
   </a>
 
@@ -401,30 +436,30 @@ https://github.com/alex-shpak/hugo-book
 
 <h2 id="jdkとは">JDKとは</h2>
 
-<p>　JDKはJava Development Kitの略です。JDKには，Javaで書かれたソースコードをコンパイルするための<strong>コンパイラ</strong>や，そのコンパイル結果（バイトコードとよぶ）を実行するための<strong>バーチャルマシン</strong>などが含まれています。コンパイルの意味が分からない方は，<a href="/docs/prog_inst/">プログラミング入門</a>をご覧ください。<br />
+<p>　JDKはJava Development Kitの略です。JDKには，Javaで書かれたソースコードをコンパイルするための<strong>コンパイラ</strong>や，そのコンパイル結果（バイトコードとよぶ）を実行するための<strong>バーチャルマシン</strong>などが含まれています。コンパイルの意味が分からない方は，<a href="/docs/programming/">プログラミング入門</a>をご覧ください。<br />
 　バーチャルマシンとは簡単にいうと，コンピュータの中に（CPUの上に）仮想的に作られたコンピュータのことです。C言語などのような言語で書かれたソースコードをコンパイルして出来上がったファイルに含まれる<strong>機械語</strong>は，特定の種類のCPU上でしか解釈・実行できません。ところがJava言語で書かれたソースコードをコンパイルして出来上がったファイルに含まれる<strong>バイトコード</strong>は，バーチャルマシンが解釈・実行できます。つまり，CPUの種類が違っても，その上に作られたバーチャルマシンさえ共通化しておけば，どんなプラットフォーム上でも動く（クロスプラットフォームな）実行ファイルを作れるというわけです。<br />
 　JDKには複数の種類（OpenJDKなど）がありますが，ここではOracle社が提供している，いわば公式のJDKをインストールします。</p>
 
 <h2 id="ダウンロード">ダウンロード</h2>
 
 <p>　まずはインストーラをダウンロードします。「jdk 13」で検索してください。執筆時点では最新バージョンは13ですが，適宜読み替えてください。「Java SE Development Kit 13 - Downloads - Oracle」というような名前のページを開きます。<figure>
-    <img src="../JDK_download.png"/> 
+    <img src="./JDK_download.png"/> 
 </figure>
 ページ下部にこのような表示があると思いますので，「Accept License Agreement」のラジオボタンをクリックしたうえで，Windowsの方は「.exe」のものを，Macの方は「.dmg」のものをダウンロードしてください。</p>
 
 <h2 id="インストール">インストール</h2>
 
 <p>　ダウンロードしたファイルを起動（Windowsの場合は.exeファイルをダブルクリック，Macの場合は.dmgファイルをダブルクリックしてマウントし，その中にある.pkgファイルをダブルクリック）し，「次」などを押してインストールを完了させてください。インストール先はデフォルトのままがよいでしょう。以下にWindows 10の場合に想定される表示を載せておきます。<figure>
-    <img src="../JDK_install_1.png"/> 
+    <img src="./JDK_install_1.png"/> 
 </figure>
 <figure>
-    <img src="../JDK_install_2.png"/> 
+    <img src="./JDK_install_2.png"/> 
 </figure>
 <figure>
-    <img src="../JDK_install_3.png"/> 
+    <img src="./JDK_install_3.png"/> 
 </figure>
 <br />
-・<a href="/docs/java/java_env/ide_install/">IDEのインストールへ進む</a></p>
+・<a href="/docs/java/env/ide_install/">IDEのインストールへ進む</a></p>
 </article>
 
       
